@@ -1,0 +1,12 @@
+{
+  "name": "Project LN",
+  "version": "0.0.0",
+  "authors": [
+    "Lanacion.com.ar"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "hammerjs": "2.0.4",
+    "jquery": "2.1.4"
+  }
+}

@@ -1,115 +1,110 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<title>Paso a Paso - lanacion.com</title>
-		<meta name="author" content="lanacion.com" />
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-			
-	</head>
+<html>
+<head>
+    <title>Elecciones 2015 - lanacion.com</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"> 
+    <!-- for Iphone -->
+    <meta name="apple-mobile-web-app-capable" content="no">
+    
+    <link rel="stylesheet" type="text/css" href="http://especiales.lanacion.com.ar/multimedia/proyectos/fonts/font.css">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_max_1100.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_960.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_850.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_750.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_max_640_500.css" />
+    <!-- endbuild -->
 
-	<style>
+    <!--[if lt IE 9]>
+        <script type="text/javascript">
+            document.createElement("nav");
+            document.createElement("header");
+            document.createElement("footer");
+            document.createElement("section");
+            document.createElement("article");
+            document.createElement("aside");        
+            document.createElement("hgroup");   
+            document.createElement("canvas");   
+        </script>
 
-		body{ margin: 0; }
+        <style> 
+            .wrapper, .ayuda2, .ayuda3{display:none !important}
+            footer{display:none}
+            div.mensaje{width:100%; max-width:990px; height:500px; position:relative; }  
+            div.mensaje div.texto{width:100%; height:400px; position:absolute; top:50px; } 
+            div.mensaje div.texto p{color:#787878; font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; line-height:1.5;}   
+            div.mensaje div.texto p a{color:#335577; font-weight:bold;} 
+        </style>
+    <![endif]-->
+<!-- 
+GOOGLE ANALYTICS >>> CHANGE data-page tag content ...
 
-		section{
-			max-width: 1360px;
-			position: relative;
-			overflow: hidden;
-		}
+    <script id="ga_scr" data-page="NAME-FOR-IDENTIFY-THE-APP">var ga_page = document.getElementById('ga_scr').dataset.page;var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-621326-6']);_gaq.push(['_setDomainName', '.lanacion.com.ar']);_gaq.push(['_setCampaignCookieTimeout',0]);_gaq.push(['_trackPageview', ga_page]);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
 
-		#galeria{}
-
-		#galeria div.contenedor{
-			position: absolute;
-			top:0;
-			left:0;
-			background-color: #f7f7f7;
-			z-index: 50;
-		}
-
-		#galeria div.contenedor div.ficha{
-			height: 550px;
-			display: inline-block;
-			background-color: #ccc;
-			overflow: hidden;
-			border-left: 1px solid #000;
-			margin-left: -1px;
-		}
-
-		div.btn{
-			width: 40px;
-			height: 40px;
-			border-radius: 100px;
-			position: absolute;
-			top:220px;
-			background-color: #f7f7f7;
-			cursor:pointer;
-			z-index: 100;
-		}
+-->
 
 
-		div.btn#menos{
-			left:10px;
-		}
+</head>
+<body>
+<div class="container clearfix">
+    <header>
+        <h1>Este es un titulo H1</h1>
+        <p class="bajada">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
+        </p>
+    </header>
 
-		div.btn#mas{
-			right:10px;
-		}
+<!--[if lt IE 9]>
+    <div class="mensaje">
+        <div class="texto">
+            <p>Este contenido no es soportado por su navegador.</p>
+            <p>Le recomendamos que descargue <a href="http://www.mozilla.org/es-AR/firefox/fx/" target="_blank">Mozilla Firefox</a> o <a href="https://www.google.com/intl/es/chrome/browser/?hl=es" target="_blank">Google Chrome</a>.</p> 
+            <p>Disculpe las molestias</p>
+        </div>
+    </div>
+<![endif]-->
 
-		div.dots{
-			width: 100%;
-			max-width: 1360px;
-			height: 50px;
-			text-align: center;
-			margin: 20px 0;
-		}
+	<section id="galeria">
+		<div class="btn" id="menos"></div>
+		<div class="btn" id="mas"></div>
+		<div class="contenedor"></div>
+	</section>
 
-		div.dots div.dot{
-			width: 15px;
-		    height: 15px;
-		    border-radius: 100px;
-		    display: inline-block;
-		    background-color: #C5C5C5;
-		    cursor: pointer;
-		    margin: 5px;
-		    padding: 6px 6px;
-		    font-family: Arial, Helvetica, sans-serif;
-		    font-size: 11px;
-		    text-indent: -1px;
-		    line-height: 1.3;
-		    transition: all 0.2s;
-		}
+	<div class="dots"></div>
+   
+    <footer>
+        <a href="./templates/credits.html" class="btn_light ajax_modal" id="creditos">Créditos</a>
+        <a href="./templates/metod.html" class="btn_light ajax_modal" id="metodo">Metodología</a>
+    </footer>
 
-		div.dots div.dot:hover{
-			background-color: #797979;
-		}
+</div> <!-- end wrapper_all -->
 
-		div.dots div.dot.active, div.dots div.dot.active:hover{
-			background-color: #32B0D6;
-			color:#fff;
-		}
 
-	</style>
-	
-	<body>
-		
-		<section id="galeria">
-			<div class="btn" id="menos"></div>
-			<div class="btn" id="mas"></div>
-			<div class="contenedor"></div>
-		</section>
+<!-- LN LOADER -->
+<div id="loader">
+<script src="http://especiales.lanacion.com.ar/multimedia/proyectos/LN_loader/js/spin.min.js"></script>   
 
-		<div class="dots"></div>
+<div id="spinner" style="width: 60px; height: 120px; position: relative; left: 50%; top: 20%; margin-left:-30px; background: url('http://especiales.lanacion.com.ar/multimedia/proyectos/LN_loader/ln.svg') center no-repeat;"></div>
 
-	</body>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script src="js/hammer.min.js"></script>
-	<script src="js/index.js"></script>
-
+<script>
+var opts={lines:40,length:2,width:1,radius:25,corners:0.5,rotate:1,color:"#006998",speed:1,trail:60,shadow:false,hwaccel:false,className:"spinner",zIndex:2000000000,top:0,left:0};var target=document.getElementById("spinner");var spinner=new Spinner(opts).spin(target);</script>
+</div>
+<!-- LN LOADER -->
+</body>
 </html>
+
+<!-- PYM -->
+<script src="http://especiales.lanacion.com.ar/multimedia/proyectos/js/pym.js" ></script>
+<!-- PYM -->
+
+<!-- build:js -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/hammerjs/hammer.min.js"></script>
+<script src="js/index.js"></script>
+<!-- endbuild -->
 

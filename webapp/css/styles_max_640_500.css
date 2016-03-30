@@ -1,0 +1,9 @@
+@media screen and (max-width: 640px) {
+    div.modal div.txts {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}

@@ -1,0 +1,63 @@
+
+/* helpers */
+.clearfix { zoom: 1; }
+.clearfix:after {content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+
+[hidden] { display: none !important; }
+
+.float_l { float: left;}
+.float_r { float: right;}
+
+.bold { font-weight: bold;}
+
+.suecaslabbold {font-family: 'suecaslabbold', arial, Helvetica, sans-serif;}
+
+.btn{
+    font-size: 10px;
+    /*padding: 0px 6px;*/
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    color: #999;
+    text-transform: uppercase;
+}
+
+
+/*** box contents */
+#wrapper_all { max-width: 1360px; margin: 0 auto;}
+
+/* end helpers */
+
+
+#loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 10000;}
+
+
+
+
+
+/*** Normalize css */
+body { font-size: 13px; color: #000; -webkit-text-size-adjust: none; font-family: arial; cursor:default;}
+h1, h2, h3, h4, h5, h6 {font-family: 'suecaslabmedium', arial, Helvetica, sans-serif; }
+
+
+
+
+
+/* FOOTER */
+footer{
+    border-top: dotted 1px #dadada;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+
+/*//////////// modal creditos /////////////////*/
+
+div.creVent{width: 100%; height: 100%; position: fixed; top:0; left:0px; background-color: rgba(255, 255, 255, 0.8); z-index: 6000; text-align: center; }
+div.creVent div.txts{max-width: 400px; margin: 10% auto; background-color: #fff; padding: 15px; border-radius: 3px; border: 1px solid #D8D8D8; position: relative; /*display: none;*/ }
+div.creVent div.txts div.titu{padding: 10px 5px; margin-bottom: 10px; color:#000; font-family: "TheSansBold"; background-color:#F7F7F7; border-radius: 3px; font-size: 18px; }
+div.creVent div.txts div.cerrar{color:#fff; padding: 8px 10px; border-radius: 100px; background-color: #000; position: absolute; top:-15px; right:-15px; cursor: pointer; }
+div.creVent div.txts div.cate{font-weight: bold; padding: 8px 0px; margin-top:10px;  }
+div.creVent div.txts div.nombre{line-height: 1.5; color:#474747; border-bottom: 1px dashed #dadada; padding-bottom: 10px;}
+div.creVent div.txts div.nombre a{text-decoration: none; color:#474747; font-weight: bold; }
+div.creVent div.txts div.nombre a:hover{color:#29ABE2; }
